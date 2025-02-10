@@ -670,15 +670,13 @@ h2.subtitle::after {
 .support-bar::before {
   content: "";
   position: absolute;
-  left: -47px;
+  left: -40px;
   background-color: #1f415f;
   border-bottom: 2px solid #274a69;
   width: 100px;
   height: 102%;
   top: 0px;
-  -webkit-transform: skewX(37deg);
-  -ms-transform: skewX(37deg);
-  transform: skewX(37deg);
+  
 }
 
 .support-bar::after {
@@ -741,18 +739,26 @@ h2.subtitle::after {
   margin-left: 53px;
   padding: 20px 0px;
 }
-
+.support-bar::before {
+  content: "";
+  position: absolute;
+  left: -0px;
+  background-color: #1f415f;
+  border-bottom: 2px solid #274a69;
+  width: 100px;
+  height: 102%;
+  top: 0px;
+  
+}
 .navbar-area::before {
   content: "";
   position: absolute;
   background-color: #1f415f;
-  height: 100%;
-  width: 58px;
-  left: -33px;
+  height: 102%;
+  width: 100px;
+  left: -53px;
   top: 0px;
-  -webkit-transform: skewX(37deg);
-  -ms-transform: skewX(37deg);
-  transform: skewX(37deg);
+
 }
 
 .navbar-area::after {

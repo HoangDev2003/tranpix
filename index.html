@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transpix - Transport & Logistic HTML Template</title>
-    <!-- favicon -->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
+    <title>HTML</title>
+
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
@@ -44,13 +37,12 @@
   </head>
 
   <body>
-    <!--   header area start   -->
-    <div class="header-area">
+    <header class="header-area">
       <div class="info-bar">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-8">
-              <ul class="social-links">
+              <ul class="social-links d-flex justify-content-center">
                 <li>
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </li>
@@ -137,12 +129,12 @@
                   <div class="offset-xl-4 col-xl-8 offset-2 col-10">
                     <div class="row">
                       <div class="col-lg-4">
-                        <div class="support-info">
+                        <div class="support-info d-flex flex-row">
                           <div class="left-content">
                             <i class="flaticon-call"> </i>
                           </div>
                           <div class="right-content">
-                            <div class="right-content-inner">
+                            <div class="right-content-inner d-flex flex-column">
                               <h5>Free Call</h5>
                               <p>+ 00 12 123 456</p>
                             </div>
@@ -150,11 +142,11 @@
                         </div>
                       </div>
                       <div class="col-lg-4">
-                        <div class="support-info">
+                        <div class="support-info d-flex flex-row">
                           <div class="left-content">
                             <i class="flaticon-email"></i>
                           </div>
-                          <div class="right-content">
+                          <div class="right-content d-flex flex-column">
                             <h5>Mail us</h5>
                             <p>Support@mail.com</p>
                           </div>
@@ -309,29 +301,19 @@
           </div>
         </div>
       </div>
-    </div>
-    <!--   header area end   -->
+    </header>
 
-    <!--   search bar popup start   -->
-    <div class="search-popup">
-      <form class="search-form" action="#">
-        <div class="form-element">
-          <input type="text" placeholder="Type your search keyword" />
-        </div>
-      </form>
-      <div class="search-popup-overlay" id="searchOverlay"></div>
-      <button class="search-close-btn" id="searchCloseBtn">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-    <!--   search bar popup end   -->
+    <div
+      class="position-fixed top-0 start-0 w-100 h-100 bg-transparent d-none fade"
+    ></div>
 
-    <!--  hero area start  -->
-    <div class="hero-area hero-bg">
+    <div
+      class="hero-area hero-bg vh-100 d-flex align-items-center justify-content-center"
+    >
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-lg-8">
-            <div class="hero-txt">
+            <div class="position-relative z-2">
               <span class="wow fadeInDown" data-wow-duration="1.5s"
                 >We are transpix</span
               >
@@ -345,11 +327,11 @@
           </div>
         </div>
       </div>
-      <div class="hero-overlay"></div>
+      <div
+        class="hero-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"
+      ></div>
     </div>
-    <!--  hero area end  -->
 
-    <!--  features section start  -->
     <div class="features-section">
       <div class="container">
         <div class="row feature-bg feature-content">
@@ -358,12 +340,15 @@
               <span class="title">Features</span>
               <h2 class="subtitle">WHY CHOOSE US</h2>
               <div class="feature-lists">
-                <div class="single-feature wow fadeInUp" data-wow-duration="1s">
+                <div
+                  class="single-feature wow fadeInUp d-flex align-items-start mb-3"
+                  data-wow-duration="1s"
+                >
                   <div class="icon-wrapper">
                     <i class="flaticon-customer-service"></i>
                   </div>
-                  <div class="feature-details">
-                    <h4>24/7 support</h4>
+                  <div class="feature-details z-1">
+                    <h4 class="fs-5 fw-bolder text-uppercase">24/7 support</h4>
                     <p>
                       We offers logistic management services and supply chain
                       perspiciatis unde omnis iste natus error sit voluptat.
@@ -406,11 +391,8 @@
         </div>
       </div>
     </div>
-    <!--  features section end  -->
 
-    <!--  service section start  -->
-
-    <div class="service-section">
+    <div class="service-section py-5 position-relative">
       <div class="container">
         <span class="title">Our Services</span>
         <h2 class="subtitle">WHAT WE PROVIDE</h2>
@@ -470,9 +452,7 @@
         </div>
       </div>
     </div>
-    <!--  service section end  -->
 
-    <!--  about section start  -->
     <div class="about-section about-bg">
       <div class="container">
         <div class="row">
@@ -501,9 +481,7 @@
       </div>
       <div class="about-overlay"></div>
     </div>
-    <!--  about section end  -->
 
-    <!--  Testimonial section start  -->
     <div class="testimonial-section">
       <div class="container">
         <div class="testimonial-container">
@@ -556,9 +534,7 @@
         </div>
       </div>
     </div>
-    <!--  Testimonial section end  -->
 
-    <!--   partner section start    -->
     <div class="partner-section">
       <div class="container">
         <div class="row">
@@ -606,9 +582,7 @@
         </div>
       </div>
     </div>
-    <!--   partner section end    -->
 
-    <!--   faq section start    -->
     <div class="faq-section">
       <div class="container">
         <div class="row">
@@ -752,9 +726,7 @@
         </div>
       </div>
     </div>
-    <!--   faq section end    -->
 
-    <!--   quote section start    -->
     <div class="quote-section quote-bg">
       <div class="container">
         <div class="row">
@@ -805,9 +777,7 @@
         </div>
       </div>
     </div>
-    <!--   quote section end    -->
 
-    <!--   news section start    -->
     <div class="news-section">
       <div class="container">
         <span class="title">Latest blog</span>
@@ -862,9 +832,7 @@
         </div>
       </div>
     </div>
-    <!--   news section end    -->
 
-    <!--   cta section start    -->
     <div class="cta-section cta-bg">
       <div class="container">
         <div class="cta-container">
@@ -884,9 +852,7 @@
       </div>
       <div class="cta-overlay"></div>
     </div>
-    <!--   cta section end    -->
 
-    <!--   footer section start    -->
     <footer>
       <div class="container">
         <div class="top-footer">
